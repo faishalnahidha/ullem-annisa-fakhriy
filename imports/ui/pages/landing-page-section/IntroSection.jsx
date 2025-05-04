@@ -29,7 +29,7 @@ const Background = styled('div')({
   height: '100%',
   zIndex: 0,
   background:
-    'linear-gradient(0deg, #393232 0%, rgba(57, 50, 50, 0) 62%), url("img/a-image-hero.jpg") no-repeat center center',
+    'linear-gradient(0deg, #393232 0%, rgba(57, 50, 50, 0) 56%), url("img/a-image-hero.jpg") no-repeat center center',
   backgroundSize: 'cover',
   position: 'absolute',
 });
@@ -77,9 +77,10 @@ export default function IntroSection(props) {
         <Box
           sx={{
             width: {
-              xs: '75%',
+              xs: '86%',
               md: '100%',
             },
+            paddingTop: '48%'
           }}
         >
           <Zoom triggerOnce delay={200} duration={1000}>
@@ -123,6 +124,10 @@ export default function IntroSection(props) {
                 size="large"
                 fullWidth
                 onClick={scrollToLocationSection}
+                sx={{
+                  color: 'primary.container',
+                  borderColor: 'primary.container',
+                }}
               >
                 Lihat lokasi
               </Button>
