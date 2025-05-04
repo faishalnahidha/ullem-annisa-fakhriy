@@ -27,11 +27,11 @@ export const akad = {
 export const reception = {
   date: 'Sabtu, 31 Mei 2025',
   time: '10.00–11.00 & 11.30–12.30 WIB',
-  location: 'Hotel Nirwana',
+  location: 'Hotel Nirwana Nganjuk',
   locationMore: 'Jl. Gatot Subroto No. 2, Nganjuk, Jawa Timur',
   locationUrl: 'https://maps.app.goo.gl/MVWt1KaEVXykseLV7',
   mapIframe:
-    'https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d494.3520399985965!2d111.8945575!3d-7.5949604!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e784b03cc294b59%3A0xcafb3bdc5d79840!2sNirwana!5e0!3m2!1sen!2sid!4v1746338111317!5m2!1sen!2sid',
+    'https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d1175.774343199862!2d111.89436677187993!3d-7.594808134404238!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e784b03cc294b59%3A0xcafb3bdc5d79840!2sNirwana!5e0!3m2!1sen!2sid!4v1746346085015!5m2!1sen!2sid',
 };
 
 
