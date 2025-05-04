@@ -106,11 +106,11 @@ export default function LandingPage({ match }) {
           <div ref={locationSectionRef}>
             <LocationSection />
           </div>
-          <GallerySection />
+          {/* <GallerySection /> */}
           <MessageSlideSection />
-          <CovidSection />
+          {/* <CovidSection /> */}
           <InputFormSection recipient={recipient} />
-          <WeddingGiftSection />
+          {/* <WeddingGiftSection /> */}
           <Footer />
         </Grid>
       </Grid>

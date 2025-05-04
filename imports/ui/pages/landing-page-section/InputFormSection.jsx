@@ -68,7 +68,7 @@ export default function InputFormSection(props) {
           pb: 5,
           px: 3,
           flexGrow: 1,
-          bgcolor: 'background.paper',
+          bgcolor: 'background.default',
         }}
       >
         <Divider sx={{ width: '100%', mb: 6 }} />
@@ -80,7 +80,7 @@ export default function InputFormSection(props) {
         {recipient._id !== '0' ? (
           <>
             <Box width="100%" mb={2}>
-              <Typography variant="body1" color="textSecondary" paragraph>
+              <Typography variant="body1" color="textPrimary" paragraph>
                 Kami sangat berbahagia jika Saudara/i bersedia menghadiri acara resepsi pernikahan
                 kami
               </Typography>
