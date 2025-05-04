@@ -12,11 +12,11 @@ import LinearProgress from '@mui/material/LinearProgress';
 import IntroSection from './landing-page-section/IntroSection.jsx';
 import ContentSection from './landing-page-section/ContentSection.jsx';
 import LocationSection from './landing-page-section/LocationSection.jsx';
-import GallerySection from './landing-page-section/GallerySection.jsx';
-import CovidSection from './landing-page-section/CovidSection.jsx';
+// import GallerySection from './landing-page-section/GallerySection.jsx';
+// import CovidSection from './landing-page-section/CovidSection.jsx';
 import MessageSlideSection from './landing-page-section/MessageSlideSection.jsx';
 import InputFormSection from './landing-page-section/InputFormSection.jsx';
-import WeddingGiftSection from './landing-page-section/WeddingGiftSection.jsx';
+// import WeddingGiftSection from './landing-page-section/WeddingGiftSection.jsx';
 import ErrorPage from './ErrorPage.jsx';
 import BackToTopButton from '../components/BackToTopButton.jsx';
 import Footer from '../components/Footer.jsx';
@@ -106,11 +106,11 @@ export default function LandingPage({ match }) {
           <div ref={locationSectionRef}>
             <LocationSection />
           </div>
-          <GallerySection />
+          {/* <GallerySection /> */}
           <MessageSlideSection />
-          <CovidSection />
+          {/* <CovidSection /> */}
           <InputFormSection recipient={recipient} />
-          <WeddingGiftSection />
+          {/* <WeddingGiftSection /> */}
           <Footer />
         </Grid>
       </Grid>

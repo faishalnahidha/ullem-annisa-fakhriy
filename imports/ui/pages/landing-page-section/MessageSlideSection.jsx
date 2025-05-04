@@ -37,7 +37,7 @@ function CarouselItem(props) {
           fontWeight: 400,
           lineHeight: '28px',
           letterSpacing: '0.15px',
-          color: 'text.secondary',
+          color: 'text.primary',
         }}
       >
         &ldquo;{props.item.message}&rdquo;
@@ -90,7 +90,7 @@ export default function MessageSlideSection() {
         paddingBottom: 5,
         paddingX: 3,
         flexGrow: 1,
-        bgcolor: 'background.paper',
+        bgcolor: 'background.default',
         textAlign: 'center',
       }}
     >

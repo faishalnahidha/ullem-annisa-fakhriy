@@ -18,8 +18,10 @@ import InstagramIcon from '../../components/icons/InstagramIcon.jsx';
 import { bride, groom, akad, reception } from '../../../lib/variables.js';
 
 const HandwritingTypography = styled(Typography)(({ theme }) => ({
-  fontFamily: 'Sofia, cursive',
-  fontSize: '24px',
+  fontFamily: 'Niconne, cursive',
+  fontWeight: 400,
+  fontStyle: 'normal',
+  fontSize: '28px',
   color: theme.palette.text.dark,
 }));
 
@@ -27,16 +29,16 @@ const StyledCard = styled(Card)(({ theme }) => ({
   borderRadius: '8px',
   minWidth: '256px',
   textAlign: 'center',
-  color: '#fff',
-  backgroundColor: theme.palette.secondary.main,
+  color: theme.palette.text.primary,
+  backgroundColor: theme.palette.primary.container,
 }));
 
 const StyledChip = styled(Chip)(({ theme }) => ({
-  color: theme.palette.secondary.main,
+  color: theme.palette.text.primary,
   fontSize: 14,
   fontWeight: 700,
   letterSpacing: '0.25px',
-  backgroundColor: theme.palette.background.default,
+  backgroundColor: '#76DFEA',
 }));
 
 const StyledInstagramIcon = styled(InstagramIcon)(({ theme }) => ({
@@ -59,17 +61,17 @@ export default function ContentSection() {
         px: 3,
         py: 6,
         flexGrow: 1,
-        bgcolor: 'background.paper',
+        bgcolor: 'background.default',
       }}
     >
       <Box pb={3}>
-        <Typography variant="body1" color="textSecondary" gutterBottom>
+        <Typography variant="body1" color="textPrimary" gutterBottom>
           Assalamu&apos;alaikum Wr. Wb.
         </Typography>
-        <Typography variant="body1" color="textSecondary" gutterBottom>
+        <Typography variant="body1" color="textPrimary" gutterBottom>
           Bismillahirrahmannirahim
         </Typography>
-        <Typography variant="body1" color="textSecondary">
+        <Typography variant="body1" color="textPrimary">
           Dengan memohon rahmat Allah SWT, kami mengundang Saudara/i untuk hadir pada acara resepsi
           pernikahan kami
         </Typography>
@@ -79,14 +81,14 @@ export default function ContentSection() {
           <Fade direction="up">
             <div>
               <HandwritingTypography gutterBottom>{bride.name}</HandwritingTypography>
-              <Button
+              {/* <Button
                 href={bride.instagramUrl}
                 target="_blank"
                 color="primary"
                 startIcon={<StyledInstagramIcon />}
               >
                 {bride.instagram}
-              </Button>
+              </Button> */}
               <Typography variant="body1" color="textPrimary">
                 Putri Bp. {bride.father} & Ibu {bride.mother}
               </Typography>
@@ -102,14 +104,14 @@ export default function ContentSection() {
           <Fade direction="up" delay={300}>
             <div>
               <HandwritingTypography gutterBottom>{groom.name}</HandwritingTypography>
-              <Button
+              {/* <Button
                 href={groom.instagramUrl}
                 target="_blank"
                 color="primary"
                 startIcon={<StyledInstagramIcon />}
               >
                 {groom.instagram}
-              </Button>
+              </Button> */}
               <Typography variant="body1" color="textPrimary">
                 Putra Bp. {groom.father} & Ibu {groom.mother}
               </Typography>
@@ -141,7 +143,12 @@ export default function ContentSection() {
                 di {akad.location}
                 <br />
                 {akad.locationMore}.&nbsp;
-                <Link href={akad.locationUrl} target="_blank" color="primary">
+                <Link
+                  href={akad.locationUrl}
+                  target="_blank"
+                  color="secondary.variant"
+                  underline="hover"
+                >
                   Lihat peta
                 </Link>
               </Typography>
@@ -154,14 +161,15 @@ export default function ContentSection() {
         <Zoom triggerOnce direction="up" duration={1500} delay={200}>
           <StyledCard elevation={0} width="100%">
             <Box p={2} pb={0}>
-              <StyledChip label="Resepsi" />
+              <StyledChip label="Walimah" />
             </Box>
             <CardContent>
               <Typography variant="h6" color="inherit" gutterBottom>
                 {reception.date}
               </Typography>
               <Typography variant="body1" color="inherit" gutterBottom>
-                pukul {reception.time}
+                pukul 10:00–11:00 &<br />
+                11:30–12:30 WIB
               </Typography>
               <Typography variant="body1" color="inherit">
                 di {reception.location}
@@ -173,7 +181,7 @@ export default function ContentSection() {
         </Zoom>
       </Box>
       {/* ############## 'Pernikahan Virtual' Card ############## */}
-      <Box pb={3}>
+      {/* <Box pb={3}>
         <Zoom triggerOnce direction="up" duration={1500} delay={200}>
           <StyledCard width="100%" elevation={0} sx={{ backgroundColor: 'background.default' }}>
             <Box p={2} pb={0}>
@@ -201,7 +209,7 @@ export default function ContentSection() {
             </CardContent>
           </StyledCard>
         </Zoom>
-      </Box>
+      </Box> */}
       <Box pt={3}>
         <WeddingLocationIcon style={{ width: '40px', height: '40px' }} />
       </Box>

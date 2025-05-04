@@ -3,31 +3,34 @@ import { createTheme } from '@mui/material/styles';
 export const myTheme = createTheme({
   palette: {
     primary: {
-      light: '#60fde0',
-      main: '#00c9ae',
-      dark: '#00977f',
-      contrastText: '#fff',
+      light: '#47B2C1',
+      main: '#199FB2',
+      dark: '#116F7C',
+      contrastText: '#F6FDFE',
+      container: '#AEEDF3',
     },
     secondary: {
-      light: '#c7bcb3',
-      main: '#968c83',
-      dark: '#685f56',
-      contrastText: '#fff',
+      light: '#9B5333',
+      main: '#832800',
+      dark: '#5B1C00',
+      contrastText: '#F6FDFE',
+      variant: '#FF7900',
     },
     text: {
-      primary: 'rgba(57, 50, 50, 0.87)',
-      secondary: 'rgba(57, 50, 50, 0.54)',
-      dark: '#393232',
+      primary: 'rgba(14, 46, 62, 0.87)',
+      secondary: 'rgba(14, 46, 62, 0.54)',
+      dark: '#0E313E',
     },
     background: {
-      paper: '#fff',
-      default: '#fffaf5',
+      paper: '#F6FDFE',
+      default: '#D4F7F9',
+      light: '#eefcfd',
     },
   },
   typography: {
     fontFamily: 'Lato, sans-serif',
     allVariants: {
-      color: 'rgba(57, 50, 50, 0.87)',
+      color: 'rgba(14, 46, 62, 0.87)',
     },
     h5: {
       letterSpacing: '0.18px',

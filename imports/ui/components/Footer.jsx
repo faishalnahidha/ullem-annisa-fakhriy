@@ -14,7 +14,7 @@ export default function Footer() {
     <Box
       minWidth="100%"
       sx={{
-        bgcolor: 'grey.50',
+        bgcolor: '#0e696e',
       }}
     >
       <Container
@@ -33,7 +33,7 @@ export default function Footer() {
               textAlign: { xs: 'center', sm: 'left', lg: 'center' },
             }}
           >
-            <Typography variant="body1" color="textSecondary">
+            <Typography variant="body1" color="primary.contrastText">
               Made with{' '}
               <FavoriteIcon
                 style={{
@@ -56,9 +56,9 @@ export default function Footer() {
               textAlign: { xs: 'center', sm: 'right', lg: 'center' },
             }}
           >
-            <Typography variant="body1" color="textSecondary">
+            <Typography variant="body1" color="primary.contrastText">
               &copy; {year}{' '}
-              <Link href="https://ullem.com" target="_blank">
+              <Link href="https://ullem.com" target="_blank" color="secondary.variant" underline='hover'>
                 Ullem Undangan Online
               </Link>
             </Typography>

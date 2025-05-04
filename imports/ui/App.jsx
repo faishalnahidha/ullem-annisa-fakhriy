@@ -10,17 +10,16 @@ import CMS from './pages/CMS.jsx';
 
 const App = () => (
   <>
-    <CssBaseline>
-      <StyledEngineProvider injectFirst>
-        <ThemeProvider theme={myTheme}>
-          <Switch>
-            <Route exact path="/" component={LandingPage} />
-            <Route exact path="/ims" component={CMS} />
-            <Route path="/:id" component={LandingPage} />
-          </Switch>
-        </ThemeProvider>
-      </StyledEngineProvider>
-    </CssBaseline>
+    <StyledEngineProvider injectFirst>
+      <ThemeProvider theme={myTheme}>
+        <CssBaseline />
+        <Switch>
+          <Route exact path="/" component={LandingPage} />
+          <Route exact path="/ims" component={CMS} />
+          <Route path="/:id" component={LandingPage} />
+        </Switch>
+      </ThemeProvider>
+    </StyledEngineProvider>
   </>
 );
 

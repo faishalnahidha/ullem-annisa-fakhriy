@@ -101,7 +101,7 @@ const StyledContainer = styled(Container)(({ theme }) => ({
   [theme.breakpoints.down('sm')]: {
     minHeight: 'calc(100vh - 56px)',
     padding: '0 0 56px',
-    backgroundColor: theme.palette.background.paper,
+    // backgroundColor: theme.palette.background.light,
   },
 }));
 
@@ -213,9 +213,9 @@ export default function CMS(props) {
   return (
     <>
       <ReactTitle title="Ullem Invitation Management System" />
-      <Box id="root" bgcolor="grey.50">
+      <Box id="root" bgcolor="background.light">
         <ElevationScroll {...props}>
-          <AppBar position="sticky" sx={{ bgcolor: 'background.paper', color: 'text.primary' }}>
+          <AppBar position="sticky" sx={{ bgcolor: 'background.light', color: 'text.primary' }}>
             <Toolbar sx={{ p: '0 4px 0 52px' }}>
               <StyledUllemImsLogo />
               <IconButton
@@ -257,7 +257,9 @@ export default function CMS(props) {
             <List
               aria-label="recipient list"
               subheader={
-                <ListSubheader component="div">Daftar Undangan ({recipientsCount})</ListSubheader>
+                <ListSubheader component="div" sx={{ backgroundColor: 'inherit' }}>
+                  Daftar Undangan ({recipientsCount})
+                </ListSubheader>
               }
             >
               {recipients.map((recipient) => (
@@ -267,8 +269,8 @@ export default function CMS(props) {
                   onClick={() => handleOpenMobileRecipientDetail(recipient)}
                 >
                   <ListItemAvatar>
-                    <Avatar>
-                      <PersonRoundedIcon />
+                    <Avatar sx={{ bgcolor: 'primary.container' }}>
+                      <PersonRoundedIcon sx={{ color: 'text.secondary' }} />
                     </Avatar>
                   </ListItemAvatar>
                   <ListItemText
@@ -282,6 +284,7 @@ export default function CMS(props) {
             /* ########################################  TABLE START  ######################################## */
             <Paper
               variant="outlined"
+              backgtroundColor="background.paper"
               sx={{
                 p: '16px 24px 24px',
                 minHeight: '400px',

@@ -20,7 +20,7 @@ export default function LocationSection() {
       sx={{
         paddingBottom: 5,
         flexGrow: 1,
-        bgcolor: 'background.paper',
+        bgcolor: 'background.default',
       }}
     >
       <Box width="100%" height={height62}>
@@ -35,14 +35,14 @@ export default function LocationSection() {
       </Box>
 
       <Box textAlign={'center'} padding={'16px 24px 0'}>
-        <Typography variant="subtitle1" color="textPrimary" gutterBottom>
-          Lokasi Resepsi
+        <Typography variant="subtitle1" color="textPrimary" sx={{ pb: 2 }}>
+          Lokasi Walimah
         </Typography>
         <Typography
           gutterBottom
           sx={{
-            fontFamily: 'Sofia, cursive',
-            fontSize: '24px',
+            fontFamily: 'Niconne, cursive',
+            fontSize: '28px',
             color: 'text.dark',
           }}
         >
