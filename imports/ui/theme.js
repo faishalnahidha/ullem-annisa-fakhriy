@@ -6,15 +6,15 @@ export const myTheme = createTheme({
       light: '#47B2C1',
       main: '#199FB2',
       dark: '#116F7C',
-      contrastText: '#F6FBFC',
-      container: '#AEEDF3'
+      contrastText: '#F6FDFE',
+      container: '#AEEDF3',
     },
     secondary: {
       light: '#9B5333',
       main: '#832800',
       dark: '#5B1C00',
-      contrastText: '#F6FBFC',
-      variant: '#FF7900'
+      contrastText: '#F6FDFE',
+      variant: '#FF7900',
     },
     text: {
       primary: 'rgba(14, 46, 62, 0.87)',
@@ -22,8 +22,9 @@ export const myTheme = createTheme({
       dark: '#0E313E',
     },
     background: {
-      paper: '#F6FBFC',
+      paper: '#F6FDFE',
       default: '#D4F7F9',
+      light: '#eefcfd',
     },
   },
   typography: {

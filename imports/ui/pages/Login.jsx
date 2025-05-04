@@ -19,22 +19,22 @@ const Root = styled(Box)(({ theme }) => ({
   minHeight: '100vh',
   position: 'relative',
   flexGrow: 1,
+  backgroundColor: theme.palette.background.light,
   [theme.breakpoints.down('sm')]: {
     paddingTop: '5vh',
     paddingBottom: theme.spacing(9),
     marginBottom: -theme.spacing(9),
-    backgroundColor: theme.palette.background.default,
   },
   [theme.breakpoints.up('sm')]: {
     paddingTop: '12vh',
     paddingBottom: theme.spacing(6),
     marginBottom: -theme.spacing(6),
-    backgroundColor: theme.palette.grey[50],
   },
 }));
 
 const StyledPaper = styled(Paper)(({ theme }) => ({
   padding: '64px 24px',
+  backgroundColor: theme.palette.background.paper,
   [theme.breakpoints.down('sm')]: {
     border: 'none',
     padding: '24px 24px',
