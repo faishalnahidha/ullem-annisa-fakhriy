@@ -4,8 +4,8 @@ import { RecipientsCollection } from '../imports/db/RecipientsCollection.js';
 import '../imports/api/recipientsMethods.js';
 import '../imports/api/recipientsPublications.js';
 
-const SEED_USERNAME = 'user'; // before is 'meteorite'
-const SEED_PASSWORD = 'password';
+const SEED_USERNAME = 'us3r'; // before is 'meteorite'
+const SEED_PASSWORD = 'corvobianco';
 
 Meteor.startup(() => {
   if (!Accounts.findUserByUsername(SEED_USERNAME)) {
