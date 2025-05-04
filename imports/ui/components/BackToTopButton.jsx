@@ -21,7 +21,7 @@ export default function BackToTop() {
 
   return (
     <Zoom in={trigger}>
-      <Fab color="default" size="small" onClick={handleClick} role="presentation">
+      <Fab color="primary" size="small" onClick={handleClick} role="presentation">
         <KeyboardArrowUpRoundedIcon />
       </Fab>
     </Zoom>
