@@ -143,7 +143,12 @@ export default function ContentSection() {
                 di {akad.location}
                 <br />
                 {akad.locationMore}.&nbsp;
-                <Link href={akad.locationUrl} target="_blank" sx={{color: 'secondary.variant', textDecoration: 'none'}}>
+                <Link
+                  href={akad.locationUrl}
+                  target="_blank"
+                  color="secondary.variant"
+                  underline="hover"
+                >
                   Lihat peta
                 </Link>
               </Typography>
@@ -163,7 +168,8 @@ export default function ContentSection() {
                 {reception.date}
               </Typography>
               <Typography variant="body1" color="inherit" gutterBottom>
-                pukul 10:00–11:00 &<br/>11:30–12:30 WIB
+                pukul 10:00–11:00 &<br />
+                11:30–12:30 WIB
               </Typography>
               <Typography variant="body1" color="inherit">
                 di {reception.location}

@@ -35,8 +35,8 @@ export default function LocationSection() {
       </Box>
 
       <Box textAlign={'center'} padding={'16px 24px 0'}>
-        <Typography variant="subtitle1" color="textPrimary" sx={{pb:2}}>
-          Lokasi Resepsi
+        <Typography variant="subtitle1" color="textPrimary" sx={{ pb: 2 }}>
+          Lokasi Walimah
         </Typography>
         <Typography
           gutterBottom
