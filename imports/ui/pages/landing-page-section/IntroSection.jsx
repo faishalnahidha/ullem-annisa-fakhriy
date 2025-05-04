@@ -1,0 +1,148 @@
+import React from 'react';
+import PropTypes from 'prop-types';
+import { Fade, Zoom } from 'react-awesome-reveal';
+import Div100vh from 'react-div-100vh';
+
+import { styled } from '@mui/material/styles';
+import Container from '@mui/material/Container';
+import Box from '@mui/material/Box';
+import Button from '@mui/material/Button';
+import Typography from '@mui/material/Typography';
+import Hidden from '@mui/material/Hidden';
+
+import { useLottie } from 'lottie-react';
+import scrollDownAnimation from '../../components/lottie-files/scroll-down.json';
+
+const Root = styled(Div100vh)(({ theme }) => ({
+  padding: 0,
+  zIndex: 0,
+  position: 'relative',
+  [theme.breakpoints.up('lg')]: {
+    position: 'sticky',
+    top: '0',
+  },
+}));
+
+const Background = styled('div')({
+  display: 'block',
+  width: '100%',
+  height: '100%',
+  zIndex: 0,
+  background:
+    'linear-gradient(0deg, #393232 0%, rgba(57, 50, 50, 0) 62%), url("img/a-image-hero.jpg") no-repeat center center',
+  backgroundSize: 'cover',
+  position: 'absolute',
+});
+
+const LottieScrollDown = () => {
+  const options = {
+    animationData: scrollDownAnimation,
+    loop: true,
+    autoplay: true,
+  };
+
+  const style = {
+    width: 48,
+  };
+
+  const { View } = useLottie(options, style);
+
+  return View;
+};
+
+export default function IntroSection(props) {
+  const { recipientName, scrollToContentSection, scrollToLocationSection } = props;
+
+  return (
+    <Root>
+      <Fade triggerOnce duration={1500}>
+        <Background />
+      </Fade>
+      <Container
+        maxWidth="xs"
+        sx={{
+          height: '100%',
+          display: 'flex',
+          flexWrap: 'wrap',
+          justifyContent: 'center',
+          alignContent: 'space-between',
+          position: 'relative',
+          zIndex: 2,
+          padding: {
+            xs: '48px 24px 64px',
+            lg: '48px 80px 64px',
+          },
+        }}
+      >
+        <Box
+          sx={{
+            width: {
+              xs: '75%',
+              md: '100%',
+            },
+          }}
+        >
+          <Zoom triggerOnce delay={200} duration={1000}>
+            <img src="/img/a-logo-white.svg" alt="Wedding Logo White" style={{ width: '100%' }} />
+          </Zoom>
+        </Box>
+        <Box width="100%" bottom="64px" id="bottom-group">
+          <Box color="#fff" pb={1}>
+            <Typography variant="body1" color="inherit" align="center" gutterBottom>
+              Kepada
+            </Typography>
+            <Fade direction="up" duration={500} delay={800}>
+              <Typography variant="h6" color="inherit" align="center" gutterBottom>
+                {recipientName}
+              </Typography>
+            </Fade>
+          </Box>
+
+          <Hidden lgUp>
+            <Box mt={2} px={3}>
+              <Zoom triggerOnce delay={1500} duration={500}>
+                <Button
+                  variant="contained"
+                  color="primary"
+                  size="large"
+                  disableElevation
+                  fullWidth
+                  onClick={scrollToContentSection}
+                >
+                  Lihat undangan
+                </Button>
+              </Zoom>
+            </Box>
+          </Hidden>
+
+          <Box mt={2} px={3}>
+            <Zoom triggerOnce delay={1800} duration={500}>
+              <Button
+                variant="outlined"
+                color="primary"
+                size="large"
+                fullWidth
+                onClick={scrollToLocationSection}
+              >
+                Lihat lokasi
+              </Button>
+            </Zoom>
+          </Box>
+        </Box>
+      </Container>
+      <Hidden lgUp>
+        <Box position="absolute" bottom={1} left="calc(50% - 48px/2)" zIndex={2}>
+          <Fade delay={2300}>
+            <LottieScrollDown />
+          </Fade>
+        </Box>
+      </Hidden>
+    </Root>
+  );
+}
+
+IntroSection.propTypes = {
+  recipientName: PropTypes.string,
+  scrollToContentSection: PropTypes.func,
+  scrollToLocationSection: PropTypes.func,
+};
