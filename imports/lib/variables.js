@@ -1,45 +1,47 @@
 /* ########## DON'T FORGET TO CHANGE VARIABLES BELOW FOR DIFFERENT PROJECTS! ########## */
 
 export const bride = {
-  name: 'Milan Mia Mutiara',
-  father: 'Wage Wahyudi',
-  mother: 'Maya Mayasari',
-  instagram: 'milan_mutiara',
+  name: 'Annisa Nurfitria Juan',
+  father: 'Dian Ramadhy Gito',
+  mother: 'Juwati',
+  instagram: 'no_intagram',
   instagramUrl: 'https://www.instagram.com/ullemdotcom/',
 };
 
 export const groom = {
-  name: 'Turin Tanuwijaya',
-  father: 'Panji Prasasta',
-  mother: 'Ayu Anggraini',
-  instagram: 'turin_tan',
+  name: 'Fakhriy Ramadhan Nahidha',
+  father: 'Hikmatullah',
+  mother: 'Idha Merahwati',
+  instagram: 'no_intagram',
   instagramUrl: 'https://www.instagram.com/ullemdotcom/',
 };
 
 export const akad = {
-  date: 'Sabtu, 20 Maret 2021',
-  time: '16:00 WIB',
-  location: 'Resto Bale Rantjah',
-  locationMore: 'Dusun 2 Gombang, Sawit, Kab. Boyolali',
-  locationUrl: 'https://goo.gl/maps/MgTz2MjEy6wcX63y8',
+  date: 'Sabtu, 31 Mei 2025',
+  time: '08:00–09:00 WIB',
+  location: 'Masjid Baitul \'Izzah',
+  locationMore: 'Jl. Gatot Subroto No. 75, Nganjuk, Jawa Timur',
+  locationUrl: 'https://maps.app.goo.gl/RtwU3BtvjR7MPu816',
 };
 
 export const reception = {
-  date: 'Minggu, 21 Maret 2021',
-  time: '9:00 WIB',
-  location: 'Semar Resto Boyolali',
-  locationMore: 'Jalan Raya Boyolali-Solo KM 2, Mojosongo, Kab, Boyolali',
-  locationUrl: 'https://goo.gl/maps/CPdfqaXMjjiPZ83f9',
+  date: 'Sabtu, 31 Mei 2025',
+  time: '10.00–11.00 & 11.30–12.30 WIB',
+  location: 'Hotel Nirwana',
+  locationMore: 'Jl. Gatot Subroto No. 2, Nganjuk, Jawa Timur',
+  locationUrl: 'https://maps.app.goo.gl/MVWt1KaEVXykseLV7',
   mapIframe:
-    'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3955.336702597572!2d110.62398771513209!3d-7.53820879456332!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e7a6bff07d97541%3A0x8d0559072c84de3a!2sSemar%20Resto!5e0!3m2!1sen!2sid!4v1617788995219!5m2!1sen!2sid',
+    'https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d494.3520399985965!2d111.8945575!3d-7.5949604!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e784b03cc294b59%3A0xcafb3bdc5d79840!2sNirwana!5e0!3m2!1sen!2sid!4v1746338111317!5m2!1sen!2sid',
 };
 
-export const domain = 'milanturin.ullem.com/'; // slash "/" in the end is mandatory!
+
+export const domain = 'annisa-fakhriy.ullem.com/'; // slash "/" in the end is mandatory!
 
 /* Convert string into URL (Target code: UTF-8) */
 export const whatsappMessage =
-  "Assalamu'alaikum%20Wr.%20Wb.%0A%0AKami%20mengundang%20Bapak%2FIbu%2FSaudara%2Fi%20untuk%20hadir%20pada%20acara%20pernikahan%20kami%0A%0A**Milan%20Mia%20Mutiara%20%26%20Turin%20Tanuwijaya**%0A%0A*Akad%20Nikah%20%3A%20Sabtu%2C%2020%20Maret%202021*%0AWaktu%20%3A%2016.00%20WIB%0ATempat%20%3A%20Resto%20Bale%20Rantjah%2C%20Dusun%202%20Gombang%2C%20Sawit%2C%20Kab.%20Boyolali%0A%0A*Resepsi%20%3A%20Minggu%2C%2021%20Maret%202021*%0AWaktu%20%3A%209.00%20WIB%0ATempat%20%3A%20Semar%20Resto%20Boyolali%2C%20Jalan%20Raya%20Boyolali-Solo%20KM%202%2C%20Mojosongo%2C%20Kab%2C%20Boyolali%0A%0AMerupakan%20kebahagiaan%20bagi%20kami%20bila%20Bapak%2FIbu%2FSaudara%2Fi%20berkenan%20hadir%20untuk%20memberikan%20doa%20restu%0A%0AWassalamu'alaikum%20Wr.%20Wb.%0A-------------------------------%0Ahttps%3A%2F%2Fmilanturin.ullem.com%2F";
+  "Assalamu'alaikum%20Wr.%20Wb.%0A%0AKami%20mengundang%20Bapak%2FIbu%2FSaudara%2Fi%20untuk%20hadir%20pada%20acara%20pernikahan%20kami%0A%0A**Annisa%20Nurfitria%20Juan%20%26%20Fakhriy%20Ramadhan%20Nahidha**%0A%0A*Akad%20Nikah%20%3A%20Sabtu%2C%2031%20Mei%202025*%0AWaktu%20%3A%2008%3A00%E2%80%9309%3A00%20WIB%0ATempat%20%3A%20Masjid%20Baitul%20'Izzah%2C%20Jl.%20Gatot%20Subroto%20No.75%2C%20Nganjuk%0A%0A*Resepsi%20%3A%20Sabtu%2C%2031%20Mei%202025*%0AWaktu%20%3A%2010.00%E2%80%9311.00%20dan%2011.30%E2%80%9312.30%20WIB%0ATempat%20%3A%20Hotel%20Nirwana%20Nganjuk%2C%20Jl.%20Gatot%20Subroto%20No.2%2C%20Nganjuk%0A%0AMerupakan%20kebahagiaan%20bagi%20kami%20bila%20Bapak%2FIbu%2FSaudara%2Fi%20berkenan%20hadir%20untuk%20memberikan%20doa%20restu%0A%0AWassalamu'alaikum%20Wr.%20Wb.%0A-------------------------------%0Ahttps%3A%2F%2Fannisa-fakhriy.ullem.com%2F";
 
+ /* Unused variables below*/ 
 export const galleryData = [
   {
     title: 'Photo 1',
